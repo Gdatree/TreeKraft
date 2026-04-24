@@ -9,6 +9,17 @@
 ## 📦 Скачать установщик
 👉 [TreeKraft_Setup.exe](https://github.com/Gdatree/TreeKraft/raw/main/TreeKraft_Setup.exe)
 
+## ⚠️ Важно: предупреждение Windows
+
+При запуске Windows может показать предупреждение "Защитник Windows".
+**Это нормально**, потому что программа подписана разработчиком, а не Microsoft.
+
+**Как запустить:**
+1. Нажми **"Подробнее"** (More info)
+2. Нажми **"Выполнить в любом случае"** (Run anyway)
+
+Файл абсолютно безопасен, код открыт под лицензией MIT.
+
 ## 🔧 Собрать из исходников
 ```bash
 git clone https://github.com/Gdatree/TreeKraft.git
