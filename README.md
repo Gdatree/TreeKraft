@@ -1,32 +1,29 @@
-# 🌲 TreeKraft
+# 🌲 TreeKraft 3.3.0
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Gdatree/TreeKraft)
 
-**TreeKraft** — это простой язык программирования со встроенной 2D-графикой (KGame).  
-Работает без Python. Исходный код открыт — никаких троянов, только честный код.
+**TreeKraft** — консольный язык программирования с ASCII-графикой (KGame) и интерактивным REPL.  
+Работает без Python. Всё в одном `.exe`. Код открыт — никаких троянов.
 
 ## 📦 Скачать установщик
 
-👉 [TreeKraft_Setup.exe](https://github.com/Gdatree/TreeKraft/raw/main/TreeKraft_Setup.exe)  
+👉 [TreeKraft_Setup.exe](https://github.com/Gdatree/TreeKraft/releases/latest)  
 
-(Для Windows 10/11)
+(Windows 10/11, x64)
 
-## 🔍 Проверка безопасности
+## ✨ Что есть в 3.3.0
 
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-4%2F71-orange)](https://www.virustotal.com/gui/file/b7699d260ba742ddacb95ea53fbc20e1fa9066b4f173c3525d42e0467abcaa1)
-
-**Результат:** 4 антивируса из 71 дали ложное срабатывание.
-
-**Почему?**  
-Программа новая и не имеет платной цифровой подписи. Некоторые антивирусы (включая Microsoft Defender) иногда ошибаются.
-
-**Что делать при предупреждении Windows?**
-1. Нажмите **"Подробнее"** (More info)
-2. Нажмите **"Выполнить в любом случае"** (Run anyway)
-
-**Проверьте сами:**  
-[📊 Полный отчёт на VirusTotal](https://www.virustotal.com/gui/file/b7699d260ba742ddacb95ea53fbc20e1fa9066b4f173c3525d42e0467abcaa1)
+- Интерактивный REPL с многострочным вводом (`if/end`, `while/end`, `for/end`)
+- Функции с параметрами, замыкания, интерполяция строк `"Hello {name}"`
+- Математика: `sin, cos, atan2, sqrt, log, exp, clamp, pi, e`
+- Списки, сортировка, строковые операции
+- **ASCII-дисплей**: `~ldsc()`, `~ldbox()`, `~ldm()` (линии), `~ldtext()`, `~ldshow()`
+- **KGame**: консольная графика с цветами ANSI (`kg.rect`, `kg.circ`, `kg.pixel`, `kg.text`)
+- Работа с файлами: `read, write, append, readlines, dir, mkdir, cp, mv`
+- Конфиги `.dtam`: `~dcfg set/get/del`, сериализация `~save/~load`
+- Трассировка, таймеры, системные вызовы, переменные окружения
+- Помощь по темам: `help math`, `help strings`, `help display` и др.
 
 ## 🔧 Собрать из исходников
 
