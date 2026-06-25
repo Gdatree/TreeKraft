@@ -6,13 +6,13 @@
 **TreeKraft** — консольный язык программирования с ASCII-графикой (KGame) и интерактивным REPL.  
 Работает без Python. Всё в одном `.exe`. Код открыт — никаких троянов.
 
-## 📦 Скачать установщик
+## Скачать установщик
 
-👉 [TreeKraft_Setup.exe](https://github.com/Gdatree/TreeKraft/releases/latest)  
+[TreeKraft_Setup.exe](https://github.com/Gdatree/TreeKraft/releases/latest)  
 
 (Windows 10/11, x64)
 
-## ✨ Что есть в 3.3.0
+##  Что есть в 3.3.0
 
 - Интерактивный REPL с многострочным вводом (`if/end`, `while/end`, `for/end`)
 - Функции с параметрами, замыкания, интерполяция строк `"Hello {name}"`
