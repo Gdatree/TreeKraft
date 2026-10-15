@@ -1,0 +1,36 @@
+[package]
+name = "treekraft"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+name = "treekraft"
+path = "src/lib.rs"
+
+[[bin]]
+name = "treekraft"
+path = "src/bin/main.rs"
+
+[dependencies]
+rand = "0.8"
+sysinfo = "0.31"
+chrono = "0.4"
+image = "0.25"
+toml = "0.8"
+serde_yaml = "0.9"
+flate2 = "1"
+zip = "2"
+base64 = "0.22"
+uuid = { version = "1", features = ["v4"] }
+regex = "1"
+minifb = "0.25"
+rusqlite = { version = "0.31", features = ["bundled"] }
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.52"
+
+[profile.release]
+opt-level = 3
+strip = true
+lto = true
+codegen-units = 1
