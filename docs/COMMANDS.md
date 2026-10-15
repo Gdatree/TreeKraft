@@ -1,0 +1,242 @@
+# TreeKraft u1 — COMMANDS
+
+Auto-generated handler-name index (mechanical extraction from
+`src/commands/*.rs`: every `starts_with("~name")`, `code == "~name"`
+AND macro definitions like `u1!("~name(", ...)` — the latter hold ~1800
+commands invisible to the first two patterns.
+Names only — no signatures (check `help <topic>` in the binary).
+
+Modules: 57, unique handler names: 2952 (+ 11 language keywords = 2963).
+(Per-module lists may repeat a name handled in several files.)
+
+## agri (12)
+
+acre_to_hectare, acre_to_sqm, compost_ratio, fertilizer_rate, frost_days, gdd, hectare_to_acre, population, seed_rate, sqm_to_acre, yield_per_acre, yield_per_ha
+
+## algo (9)
+
+bfs, collatz, dfs, digital_root, euler_totient, factorial, fibonacci, is_perfect_square, isqrt
+
+## audio (4)
+
+audio_beep, audio_play, audio_stop, audio_volume
+
+## auto (6)
+
+key_hold, key_press, key_release, mouse_move, scroll, type_text
+
+## bio (20)
+
+apgar_score, blood_volume, bmi, bmi_category, body_fat, bsa_dubois, bsa_mosteller, calorie_resting, due_date, gfr, ibm_devine, ibm_hamwi, ibm_miller, ibm_robinson, lean_mass, max_hr, pregnancy_week, target_hr, vo2max, water_intake
+
+## calc (73)
+
+add_persist, aliquot_sum, amu, apery, avogadro, bell_num, binary_weight, blackbody_peak, bohr_radius, boltzmann, catalan, circle_perimeter, collatz_steps, compton_wavelength, conductance, cone_volume, cylinder_volume_fn, de_broglie, derangements, digit_product, divisor_count, doppler_shift, electron_mass, elementary_charge, euler_mascheroni, fine_structure, gas_constant, golden_ratio, gravitational, harmonic, hartree, hex_num, horsepower_to_w, is_abundant, is_deficient, is_palindrome_num, is_perfect, kinetic_energy, liouville, mach_to_ms, magnetic_flux, mertens, moebius, ms_to_mach, mult_persist, neutron_mass, penta_num, planck, prime_count, pronic, proton_mass, relativistic_gamma, rev_num, rydberg, schwarzschild, sigma, silver_ratio, speed_of_light, sphere_surface, sphere_volume_fn, stefan_boltzmann, sum_of_cubes, sum_of_squares, superfactorial, tetrahedral, thermal_energy, trailing_zeros, triangular, twin_prime, vacuum_perm, vacuum_perm_mag, w_to_horsepower, wien_displacement
+
+## chem (29)
+
+activation_energy, activity, atomic_mass, atomic_symbol, balmer, binding_energy, carbon_dating, cell_potential, decay_constant, delta_g, delta_h, delta_s, gibbs_free, h_from_ph, half_life, ideal_gas_volume, molality, molarity, nernst, normality, ph_from_h, ph_from_poh, photon_energy, photon_wavelength, poh_from_ph, rate_constant, rydberg_energy, stp_volume, van_der_waals
+
+## color (10)
+
+clr_blend, clr_blue, clr_brightness, clr_grayscale, clr_green, clr_hex, clr_invert, clr_red, clr_rgb, clr_to_hex
+
+## compress (4)
+
+gzip_decode, gzip_encode, zip_extract, zip_list
+
+## convert (19)
+
+ascii, bin, bool, byte_size, chr, clamp, dec, float, from_ascii, hexnum, int, lerp, oct, ord, range, roman, roman_parse, round_to, str
+
+## cook (17)
+
+abv, alcohol_volume, baking_temp, brew_gravity, concentration, cooking_time, dilution, dough_hydration, ebc_to_srm, ibu, pressure_cooker, proof_to_pct, roast_time, servings_scale, srm_to_ebc, turkey_time, yeast_activation
+
+## crypto (5)
+
+decrypt, encrypt, md5, random_bytes, sha256
+
+## database (19)
+
+db_backup, db_begin, db_changes, db_close, db_columns, db_commit, db_create, db_exec, db_execute, db_insert, db_last_insert_id, db_open, db_query, db_query_row, db_query_value, db_restore, db_rollback, db_tables, db_transaction
+
+## datetime (15)
+
+datetime, day_of_week, days_in_month, format_date, from_timestamp, is_leap_year, now, nowms, sleep, time, timer_elapsed, timer_reset, timer_start, today, wait
+
+## debug (136)
+
+alias, aliases, and, arg, args, assert, assert_eq, assert_false, assert_gt, assert_lt, assert_ne, assert_throws, assert_true, backtrace, backup, benchmark, benchmark_n, bool, breakpoint, call_stack, channel, clear, config, confirm, consts, continue, credits, echo_off, echo_on, emit, env, eq, error, error_clear, error_info, eval, events_list, exists, exporthelp, funcs, getenv, gt, gte, history, historyclear, import, info, ini_del, ini_get, ini_keys, ini_load, ini_save, ini_sections, ini_set, inspect, kv_del, kv_get, kv_keys, kv_open, kv_save, kv_set, loadhistory, log, log_clear, log_debug, log_error, log_info, log_level, log_show, log_to_file, log_warn, logfile, loglevel, lt, lte, mem, memclear, module_vars, modules, mutex, mutex_lock, mutex_unlock, neq, noecho, not, off, on, or, profile_report, profile_start, profile_stop, prompt, queryparse, querystringify, question, reload, render, reset, restore, sandbox_allow, sandbox_deny, sandbox_off, sandbox_on, sandbox_status, savehistory, setconfig, setenv, stopwatch, success, template, template_var, ternary, test, test_report, test_reset, test_summary, thread, thread_stop, thread_wait, threads, tobool, tonum, tostr, trace, type, typeof, unalias, unwatch, urlparse, validate, vars, warn, watch, watches, which, xor
+
+## display (17)
+
+ld, ldborder, ldbox, ldc, ldcircle, ldclear, ldfill, ldfill_circle, ldg, ldload, ldm, ldrect, ldsave, ldsc, ldscroll, ldshow, ldtext
+
+## encoding (8)
+
+csv_decode, csv_encode, json_decode, json_encode, toml_decode, toml_encode, yaml_decode, yaml_encode
+
+## eng (135)
+
+H_to_pH, acceleration_force, angular_velocity_lin, beam_deflection, beam_stress, bernoulli, blackbody_peak2, buoyancy, buoyant_force, capacitance_charge, capacitor_energy, capacitor_energy2, capacitor_parallel, capacitor_series, carnot_efficiency, centripetal_accel, centripetal_f2, centripetal_force, column_buckling, de_broglie_wavelength, decibel, density2, displacement_accel, doppler_freq, drag_force, electric_charge2, electric_current, electric_energy, electric_field, electric_power, electric_voltage, engine_efficiency, enthalpy, entropy_change, escape_velocity, f_number, flow_rate, flow_rate2, force_pressure, frequency_period, g_field, gas_work, gear_ratio, gravity_force, heat_energy, hydrostatic_pressure, ideal_gas_pressure, ideal_gas_vol2, impulse, impulse_force, inductor_energy, inductor_energy2, inductor_series, kepler_period, kinetic_rot, latent_heat, latent_heat2, length_contraction, lens_maker, lift_force, linear_velocity_ang, luminosity, mach_number, magnification, mass_density, mechanical_advantage, modulus, molar_mass_moles, moment_force, moment_inertia_disk, moment_inertia_ring, moment_inertia_rod, momentum, momentum_mass, ohm_resistance, orbital_speed, pH_to_H, parallel_resistance, pendulum_frequency, pendulum_period, photon_energy2, photon_momentum, pipe_loss, poisson, potential_energy, potential_energy_grav, power_angular, power_dissipated, power_law, power_rat2, power_work, pressure_fluid, pressure_force, pressure_force2, projectile_height, projectile_range, projectile_time, rc_time_constant, relativistic_factor, resistor_parallel, resistor_power, resistor_series, resonant_freq, reynolds, rms_voltage, rot_energy, sensible_heat, series_resistance, shear_stress, skin_depth, snell, sound_attenuation, specific_heat_cap, spring_force, spring_frequency, spring_potential, strain, stress, thermal_exp2, thermal_expansion, thermal_heat2, time_constant, time_dilation, torque_force, torque_lever, torsion_stress, velocity_final, voltage_divider, voltage_divider2, wave_frequency, wave_speed, wavelength, weight_mass, work_force, work_force_d
+
+## fast (0)
+
+
+
+## ffi (4)
+
+dl_call, dl_close, dl_list, dl_open
+
+## fish (20)
+
+bait_depth, casting_distance, catch_release, depth_finder, dissolved_oxygen, fish_age, fish_condition, fish_weight, hook_size, line_strength, moon_phase, solunar_rating, sonar_reading, tide_height, tide_range, trolling_speed, water_clarity, water_current, water_temp, wave_height
+
+## fs (19)
+
+abs_path, append_file, copy_file, create_dir, delete_dir, delete_file, expand_user, file_exists, file_ext, file_modified, file_name, file_size, file_stem, is_dir, is_file, list_dir, move_file, read_file, write_file
+
+## gameui (14)
+
+counter, dialog, game_over, healthbar, hp, hud, lives, menu, menu_select, notify, pause, resume, show_score, xp
+
+## geo3 (101)
+
+annular_area, annulus_area, annulus_perimeter, arc_length, box_surface, box_volume, capsule_surf2, capsule_vol2, capsule_volume, chord_length, circle_arc_length, circle_area, circle_chord_length, circle_circum, circle_sector_area, circle_sector_perimeter, circle_segment_area, cone_surface, cube_surface, cube_volume, cylinder_side, cylinder_surface, cylinder_volume, cylindrical_shell_volume, decagon_area, ellipse_area, ellipse_circ, external_tangent, frustum_volume, hemisphere_surface, hemisphere_vol2, hemisphere_volume, heptagon_area, heron_area, hexagon_area, hypotenuse, internal_tangent, kite_area, nonagon_area, octagon_area, parallelogram_area, pentagon_area, poly_perimeter, polygon_exterior_angle, polygon_interior_angle, prism_surface, prism_vol2, prism_volume, pyramid_surface, pyramid_vol2, pyramid_volume, pythagorean_leg, rect_box_diagonal, rect_pyramid_volume, rectangle_area, rectangle_perimeter, regular_dodeca_surface, regular_dodeca_volume, regular_hexagon_apothem, regular_hexagon_area, regular_hexagon_perimeter, regular_icosa_surface, regular_icosa_volume, regular_octa_surface, regular_octa_volume, regular_octagon_area, regular_pentagon_area, regular_poly_area, regular_polygon_apothem, regular_polygon_area, regular_polygon_perimeter, regular_tetra_surface, regular_tetra_volume, rhombus_area, right_triangle_area, sector_area, segment_area, segment_height, sphere_cap_surface, sphere_cap_volume, sphere_volume, sphere_zone_area, spherical_shell_surface, spherical_shell_volume, spherical_wedge_volume, square_perimeter, square_pyramid_surface, square_pyramid_volume, torus_surf2, torus_surface, torus_vol2, torus_volume, trapezoid_area, trapezoid_midsegment, triangle_altitude, triangle_area_bh, triangle_circumradius, triangle_inradius, triangle_median, triangle_perimeter, triangular_prism_volume
+
+## html (34)
+
+html_a, html_article, html_aside, html_blockquote, html_br, html_code, html_div, html_em, html_figcaption, html_figure, html_footer, html_h1, html_h2, html_h3, html_h4, html_h5, html_h6, html_header, html_hr, html_img, html_li, html_main, html_mark, html_nav, html_p, html_pre, html_section, html_span, html_strong, html_table, html_tag, html_td, html_tr, html_ul
+
+## images (15)
+
+img_crop, img_draw_line, img_fill, img_flip_h, img_flip_v, img_grayscale, img_height, img_invert, img_load_any, img_pixel, img_resize, img_rotate, img_save_any, img_setpixel, img_width
+
+## iter (12)
+
+iter_chunk, iter_cycle, iter_drop, iter_enumerate, iter_pairwise, iter_range, iter_repeat, iter_rev, iter_step, iter_take, iter_windows, iter_zip
+
+## json (5)
+
+json_get, json_keys, json_parse, json_pretty, json_stringify
+
+## lists (202)
+
+add, cache_clear, cache_del, cache_get, cache_has, cache_list, cache_set, cache_size, choice, cumsum, dclear, dcopy, dcountby, ddefault, ddel, dequeue, dget, dgroupby, dhas, dict, dict_from_lists, dict_invert, dict_to_list, ditems, dkeys, dlen, dmerge, dset, dupdate, dvals, enqueue, flatten, freq_map, get, insert, join, keys, lambda, list, list_abs, list_adjacent_diff, list_all, list_all_even, list_all_num, list_all_pos, list_any, list_any_neg, list_append, list_argmax, list_argmin, list_avg, list_cartesian, list_ceil, list_chunk, list_clear, list_combinations, list_concat, list_contains, list_contains_val, list_count, list_count_by, list_count_equal, list_count_even, list_count_greater_than, list_count_less_than, list_count_neg, list_count_numeric, list_count_odd, list_count_pos, list_count_zero, list_cubed, list_cummax, list_cummin, list_cycle_n, list_dedup, list_diff, list_doubled, list_drop, list_drop_last_n, list_drop_while, list_enumerate, list_even_only, list_fill, list_filter, list_find, list_findall, list_first, list_first_pos, list_flatten, list_floor, list_fraction, list_frequency_of, list_geomean, list_group_by, list_halved, list_harmonic, list_has_dups, list_head, list_index, list_index_of, list_init, list_inter, list_intersperse, list_ints_only, list_is_desc, list_is_empty, list_is_sorted, list_is_unique2, list_keep_nth, list_last, list_last_index, list_last_pos, list_mad, list_map, list_max, list_max_abs, list_max_below, list_midrange, list_min, list_min_above, list_min_abs, list_minmax, list_mode_num, list_negate, list_notany, list_odd_only, list_pad_left_num, list_pad_right_num, list_pairs, list_partition, list_permutations, list_prepend, list_range, list_range_span, list_reduce, list_remove_val, list_removeval, list_repeat, list_rms, list_rotate, list_round, list_sample, list_shift, list_shuffle, list_sign, list_sortby, list_sorted_abs, list_squared, list_std, list_sum, list_sum_abs, list_sum_first_n, list_sum_last_n, list_sum_sq, list_tail, list_take, list_take_last_n, list_take_while, list_truthy, list_union, list_unshift, list_window, list_window_avg, list_window_sum, list_zip, list_zip_with, most_freq, normalize, peek_stack, pop, pop_stack, push, queue, queue_empty, queue_peek, queue_size, range, remove, rev, running_sum, sample, set, set_add, set_diff, set_has, set_inter, set_list, set_new, set_remove, set_size, set_union, shuffle, slice, sort, sort_by_len, sort_desc, stack, stack_empty, stack_size, stats, unique, values
+
+## maps (12)
+
+drawmap, loadmap, map_fill, map_new, map_size, obj, objdel, objmove, settile, showmap, spawn, tile
+
+## math (394)
+
+a_percent_of_b, abs, abundant_check, acos, acosd, acot, acot_deg, acot_rad, acoth, acsc, acsc_deg, acsc_rad, add_pct, aliquot_sum2, american_odds, amp_to_db, angstroms, apery_const, approx, asec, asec_deg, asec_rad, asin, asind, atan2, atan2d_math, atand, atomic_mass_unit, au, automorphic_check, avogadro_number, bearing_deg, between, binet_n, binomial_pmf, bit_and, bit_not, bit_or, bit_parity, bit_reverse, bit_rol, bit_ror, bit_xor, bohr_radius2, boltzmann_const, brun_const, catalan_const2, catalan_number_n, cauchy_pdf, cbrt, ceil, ceil_dp, ceil_multiple, centered_square, centimeters, central_binomial, chains, choice, circle_diameter, circle_diameter_from_area, clamp, classical_electron_radius, coin, collatz_len, collatz_next, collatz_peak, comb, compound_growth, conway_const, cos, cosd, cosh, cot_deg, cot_rad, coth, coulomb_const2, covariance, coversin, cross, csc_deg, csc_rad, csch, cube_volume2, db_add, db_to_amp, db_to_power, dec, dec_by, decay_rate, decibels_ratio, decimal_odds, deficient_check, deg, deg_to_gon2, degrees, dice, digamma, digit_num_count, digit_sum_math, digital_root2, digits_prod, dist3d, dist_chebyshev, dist_manhattan, distance, div_var, dot, double_fact2, doubling_time, e, e_const, ease_bounce_out, ease_cubic_in, ease_cubic_out, ease_quad_in, ease_quad_out, ease_sine_in, ease_sine_out, eccentric_anomaly, electric_constant, electron_mass2, ellipse_eccentricity, elu_math, entropy, erf_inv, erf_x, erfc_x, euler_gamma_num, ev_calc, excsc, exp, expected_value, expm1_math, exsec, fact, factorial2, falling_factorial, faraday_const, feet, feigenbaum, fft, fib, fib_golden_ratio, fib_index, fine_struct2, floor, floor_dp, floor_multiple, fov_deg, fract, fractional_odds, from_roman, furlongs, gamma_func, gas_const2, gauss_const, gaussian_bell, gcd, gelu_math, geom_series_sum, glaisher_const, gon_to_deg2, gray_code, gross_from_net, growth_rate, gumbel_pdf, half_life_time, happy_check, harm_num_math, harmonic_pair, haversin, hexagonal_n, hyperfactorial, hypot, implied_prob, inc, inc_by, inches, int_root_floor, is_even, is_negative, is_odd, is_positive, is_power_of_two, is_prime, is_zero, j0_bessel, j1_bessel, jacobsthal_n, kaprekar_check, kelly_fraction, khinchin_const, kilometers, lambert_w, lcm, leading_zeros, leaky_relu, lerp, lgamma_ln, light_years, log, log10, log1p_math, log2, log2_ratio, log_base, logistic_cdf, logit, logit_math, lucas_n, magnetic_constant, map, map_range, mat_det, mat_transpose, matrix_add, matrix_identity, matrix_inv, matrix_mul, matrix_scale, matrix_sub, max, mean, mean2, mean_anomaly, mean_contraharmonic, mean_geometric2, median, micrometers, midpoint, midpoint_math, miles, millimeters, min, mod_float, mod_int, mod_neg, motzkin_n, mul_var, nanometers, narcissistic_check, nautical_miles, net_from_gross, neutron_mass2, next_float, next_pow2, normal_cdf, normal_pdf, normalize_angle, nth_root, odds_to_prob, omega_const, padovan_n, palindrome_num_check, para_area2, parsecs, partition_num, passwd, pentagonal_n, percent_change, percent_diff, percent_of, percentile, perfect_check, perm, perrin_n, phi_inv, pi, picas, planck_const2, planck_reduced, plastic_number, polar_angle, popcount, pow, pow_int, power_ratio_db, power_to_db, prev_float, prev_pow2, prime, primorial, prob_odds, product, proton_mass2, quad_mean, rad, radians, rand_normal, randf, randint, random_exponential, random_gaussian, random_poisson, randrange, rayleigh_pdf, rect_perimeter, relu, relu_math, remain_floor, reverse_number, rising_diagonal, rising_factorial, rnd, rndbool, rndcolor, rndf, rnds, root, round, round_dp, round_half_even, round_half_up, rydberg_const, safe_div, safe_pow, safe_sqrt, sample, sawtooth_math, schroeder_n, sec_deg, sec_rad, sech, shl, shr, shuffle, sigmoid, sigmoid_math, sigmoid_prime, sign, silver_ratio2, sin, sinc, sind, sinh, slope_deg, smoothstep, softplus, softplus_math, softsign, sphere_diameter, spl_db, sqrt, sqrt_phi, sqrt_sum_sq, square_perim2, square_wave_math, star_number, stddev, stefan_bc, step_round, sub_pct, subfactorial, sum_n2, sum_n3, superfactorial2, swish_math, synodic_period, tan, tand, tanh, tau_num, tax_amount, tetranacci_n, tip_amount, to_ordinal, to_roman, totient_phi, trail_zeros, trailing_zero_fact, triangle_area2, triangle_wave_math, tribonacci_n, trunc, twips, unit_step, variance, variance_of_pair, vec_add, vec_scale, vec_sub, vector_len, vector_normalize, versin, vnorm, weibull_pdf, wrap, wrap_rad, y0_bessel, y1_bessel, yards, zeta2_const, zeta_val, zscore
+
+## mega (65)
+
+binary_search, clamp01, clipboard_set, contains_any, count_digits, count_letters, count_words, cpu_cores, current_dir, digit_count, digit_sum, euler, first, first_char, get_env, golden, graph_bfs, graph_dfs, graph_edge, graph_new, graph_shortest, heap_new, heap_peek, heap_pop, heap_push, heap_size, identity, inf, is_finite, is_int, is_nan, last, last_char, list_average, list_count_true, list_nunique, list_swap, lower_bound, mem_compare, mem_copy, mem_size, mul_add, noop, percent, phi, prefix, range_step, repeat_text, ring_add, ring_get, ring_new, ring_size, round_to, set_env, shell_cmd, signum, sort_fast, sprintf, suffix, tau, truncate_text, type_of, upper_bound, uptime, zfill
+
+## music (18)
+
+bpm_to_hz, bpm_to_ms, cents, decay_time, delay_time, highpass, hz_to_bpm, interval_ratio, interval_semitones, lowpass, midi_note, ms_to_bpm, noise, note_freq, reverb_time, sawtooth, square_wave, triangle_wave
+
+## net (17)
+
+dns, dns_old, download, http_delete, http_get, http_post, http_put, ip, mac, netstat, online, ping, port_open, udp_bind, udp_close, udp_recv, udp_send
+
+## output (75)
+
+al, arrow, ascii_border, banner, bg, bg_color, bgcolor, blink, blink_text, blue, bold, box, bullet, chart_bar, check, clear_line, color, color_blue, color_cyan, color_green, color_magenta, color_red, color_yellow, cross, cur, cursor_col, cursor_down, cursor_restore, cursor_save, cursor_up, cyan, dim_text, dump, echo, fg, fg_color, format, gradient, green, hidden, hr, indent, italic, justify_center, justify_left, justify_right, line, loading_bar, magenta, overline, print, print_table, printf, println, progress, progressbar, quote, rainbow, red, repeat_str, reset_styles, resetcolor, reverse_text, rgb, rgb_bg, scroll_text, sep, separator, spinner, strike, strikethrough, table, typewriter, underline, yellow
+
+## pattern (8)
+
+dedent, ellipsis, escape_shell, indent, pluralize, slugify, truncate, wrap_text
+
+## physics (94)
+
+accel_from_speed, accelerate, angle_delta, angle_delta_abs, angle_from_vel2, angle_turn, angular_vel, aspect_ratio, avg_velocity, bounce_off_floor, bounce_off_wall, bounce_v, camera, clamp_01, clamp_value, climb_height, collide_circ, collide_point, collide_rect, combo_multiplier, cooldown_tick, critical_chance, damage_reduction, damp_factor, dist_from_speed, drag_velocity, ease_in_cubic, ease_in_out_cubic, ease_in_out_quad, ease_in_quad, ease_out_cubic, ease_out_quad, ease_tween, entity_add, entity_move, exponential_moving_avg, fall_speed, fall_time, follow_ratio, fps, frac_noise, frame_decay, friction_step, g_force_val, game_dist2, gravity_step, gravity_x, gravity_y, health_after_damage, health_ratio, hit_chance, invert_vel, jump_velocity, lerp_angle, level_threshold, move_towards, normalize_speed, osc_cos, osc_sin, physics_step, pingpong, pixel_area, position_update, projectile_pos_x, pulse_wave, rand_between, rand_int_between, random_walk, reach_time, reaction_distance, reflect_vx, reflect_vy, repeat_cycle, round_trip_time, run_distance, score_multiplier, screen_ratio, shake, slope_descent, smooth_tween, smoothstep01, speed_abs, speed_from_time, spin_update, stop_distance, target_lerp, time_from_speed, timer_countdown, vel_from_accel, velocity_update, weight_move, wrap_value, xp_curve, zoom
+
+## pkg (2)
+
+import_pkg, trek_pkg
+
+## process (7)
+
+exec_bg, exec_output, exec_status, process_exists, process_kill, process_list, shell
+
+## regex (7)
+
+regex_count, regex_escape, regex_find, regex_findall, regex_match, regex_replace, regex_split
+
+## server (5)
+
+srv_accept, srv_root, srv_route, srv_start, srv_stop
+
+## sound (6)
+
+play_melody, play_note, play_tone, sound_play, sound_stop, sound_volume
+
+## sport (18)
+
+bmi_from_wh, body_fat_wh, brzycki, calories_cycle, calories_run, calories_swim, calories_walk, dips_score, epley, ffmi, one_rep_max, pace_speed, pullup_score, race_distance, race_time, speed_pace, waist_hip, wilks
+
+## sprites (116)
+
+anim, anim_addframe, anim_create, anim_current, anim_done, anim_frame, anim_frames, anim_loop, anim_once, anim_pause, anim_pingpong, anim_remove, anim_resume, anim_speed, anim_state, camera, camera_follow, collide, collide_circ, collide_grid, collide_line, collide_point_circ, collide_point_rect, collide_rect, deletegame, delta, dialog, draw_sprite, drawmap, drawmap_rect, fade_in, fade_out, flash, fps, fps_show, framecount, game_acceleration, game_camera, game_camerashake, game_camerazoom, game_collision, game_delta, game_fps, game_gravity, game_init, game_input, game_level, game_lives, game_load, game_move, game_object, game_physics, game_pos, game_quit, game_reset, game_rotate, game_run, game_save, game_scale, game_scene, game_score, game_sprite, game_switch, game_velocity, gamestate, gamestate_is, hp, hp_add, hud, lives, lives_add, loadgame, loadmap, loop_anim, map, map_count, map_fill, map_new, map_replace, map_save, mapsize, menu, menu_index, menu_select, obj, objdel, objmove, particle, particle_burst, pause, play, resume, savegame, score, score_add, screen_color, screen_to_world, settile, shake, showmap, spawn, sprite, sprite_copy, sprite_del, sprite_load, sprite_mirror, sprite_rotate, sprite_size, stop_anim, tile, transition, viewport, world_to_screen, xp, xp_add, zoom
+
+## stats (18)
+
+stats_corr, stats_cov, stats_describe, stats_hist, stats_iqr, stats_max, stats_mean, stats_median, stats_min, stats_mode, stats_normalize, stats_percentile, stats_quartiles, stats_range, stats_std, stats_sum, stats_var, stats_zscore
+
+## strings (263)
+
+acronym, add_bom, add_line_numbers, after_str, alternating_case, ansi_length, ascii_only, atbash, avg_word_len, base64_decode, base64_encode, before_str, bytes_to_hex, caesar, capitalize, capitalize_first, casefold, censor, censor_words, center, center_words, char_count, char_is_emoji, charat, chunk, chunk_each, codeat, commas, concat, constant_case_str, contains, contains_all, count, count_consonants_str, count_lower, count_newlines, count_punct, count_sentences_str, count_spaces, count_tabs, count_tokens, count_upper, count_vowels_str, crc32, csv_field_quote, csv_parse_row, decode_base64, delete_chars, delete_nth_word, double_str, drop_str, drop_words, email_domain, email_local_part, empty, encode_base64, encode_rot13, ends_with_any, endswith, equals_ignore_case, escape_json, escape_regex, escape_xml, expand_tabs, extract_email, extract_ip_str, extract_phone, extract_urls, fill_paragraph, find, first_letters, first_word, format_money, format_percent, freq_words, fromcode, glob_to_regex, has_digit, has_lower, has_punct, has_space, has_upper, hash, hex, hex_to_bytes, html_escape, html_unescape, initials, insert_every, insert_str, int_with_sep, is_absolute_path, is_anagram, is_blank_str, is_palindrome_str, is_sentence_case, is_title, is_title_case, isalnum, isalpha, isdigit, islower, isnum, isspace, isupper, json_format, json_minify, keep_alpha, keep_digits, keep_nth_word, key_value_str, last_n_chars, last_word, left_align_words, len, letters_sort, levenshtein, line_count, ljust, longest_common_prefix, longest_common_substring, longest_common_suffix, longest_word, longest_word_len, lower, lstrip, markdown_bold, markdown_code, markdown_escape, markdown_italic, markdown_link, mask_card, mask_email, mask_phone, mask_since, max_len_str, merge_spaces, mid_chars, morse_decode, morse_encode, normalize_spaces, nth_word, number_prefix, ord_suffix, pad, pad_both, pad_end, pad_end_char, pad_left, pad_number, pad_number_str, pad_right, pad_start, pad_start_char, pascal_case_str, path_join_str, pig_latin, plural, prefix_lines, printable_only, quote_lines, random_case, random_word, remove_consonants, remove_duplicates, remove_prefix_str, remove_substring, remove_suffix_str, remove_vowels, rep, repeat_each_str, replace, replace_first, replace_last, reverse, right_align_words, rjust, rle_decode, rle_encode, rot13, rot18, rot47_str, rotate_str, rstrip, scramble_words, shell_quote_str, shorten, shortest_word, shortest_word_len, shrink_tabs, shuffle_chars, signed_str, similarity_pct, sortchars, space_to_tab, split, split_chars, split_lines2, split_sentences, split_whitespace2, split_words_camel, sql_quote_str, starts_with_any, startswith, strip_ansi, strip_bom, strip_comments, strip_digits, strip_emoji, strip_punct, strip_whitespace, sub, suffix_lines, swap_case_words, swap_words, swapcase, syllables, tab_to_space, tabify_lines, take_str, take_words, title, tokenize, total_bytes, total_chars, train_case_str, trim, trim_chars, trim_end, trim_end_chars, trim_start, trim_start_chars, truncate_chars, truncate_mid, unescape_json, unhex, unique_words, unquote_lines, upper, url_decode, url_encode, url_hostname, url_pathname, url_scheme, utf8_validate, uuid, vigenere_dec, vigenere_enc, wildcard_match, word_count, word_lengths, word_positions, word_shuffle_keep, words_shuffle, wordwrap, wrap_angle, wrap_brace, wrap_each_word, wrap_every, wrap_paren, wrap_quote, wrap_square, xor_str
+
+## tcp (4)
+
+tcp_connect, tcp_listen, tcp_recv, tcp_send
+
+## textproc (61)
+
+a1z26, alternate_upper, angle_wrap, box_text, braces_wrap, bubble_text, camel_to_snake, capitalize, capitalize_all_words, center_text, clean_whitespace, deaccent, drop_short_words, drop_start, drop_word_count, escape_quotes, first_chars, hexlify, invert_case, join_lines, kebab_to_snake, keep_alnum, keep_long_words, last_chars, lowercase, mask_text, narrow_text, no_digits, pad_center_chars, pad_left_chars, pad_right_chars, paren_wrap, quote_wrap, rainbow_text, repeat_chars, repeat_text, reverse_chunks, reverse_letters, reverse_words, sentence_case, shift_chars, shuffle_words, single_line, snake_to_camel, snake_to_kebab, sort_letters, sort_words, space_chars, split_lines, spongebox, striptags, swap_first_last, tabulate, take_chars, take_word_count, text_repeat_each, toggle_case, unescape_quotes, unhexlify, uppercase, wide_text
+
+## time (128)
+
+append, append_file, arch, args, autosave, beep, bell, clear_screen, clipboard, cls, copy, cp, cpu_count, create_dir, cwd, date, date_add, datetime, day, days_in_month, dcfg, debounce, delfile, dir, dns_lookup, download, env, env_get, env_set, exec, execoutput, exit, exporthelp, fetch, filesize, filetime, filetype, fsize, ftouch, ftype, glob, history, homedir, hostname, hour, in, inkey, is_leap, isdir, isfile, jsonparse, jsonstringify, key, keycode, keydown, keyname, keys, keyup, license, list_dir, load, logoff, melody, mem, memclear, minute, mkdir, modified, month, mouse, mouse_btn, mouse_wheel, move, mv, now, nowms, os, pid, post, ppid, procexists, prockill, procs, read, read_file, readbytes, readcsv, readjson, readkey, readlines, reload, remove_dir, rename, restart, rmdir, run, save, second, setclipboard, setenv, shell, shutdown, sleep, sleepms, snd_beep, sys, sysinfo, tempdir, time, timer, timer_elapsed, timestamp, touch, trace, uptime, username, vars, version, waitkey, waitms, waituntil, weekday, write, write_file, writecsv, writejson, year, yearday
+
+## tui (8)
+
+tui_bar, tui_btn, tui_clear, tui_init, tui_input, tui_show, tui_text, tui_win
+
+## types (4)
+
+enum, match, new, struct
+
+## units (658)
+
+a_m_to_oersted, a_to_ma, ac_to_ha, ac_to_sqft, ac_to_sqm, ac_to_sqmi, acre_to_ft2, acre_to_ha2, acres_to_sqft2, ah_to_coulomb, am_to_fm, amp_to_ka, angstrom_to_nm, arcmin_to_deg, arcsec_to_deg, atm_to_bar, atm_to_mmhg, atm_to_pa, atm_to_psi, atm_to_torr, au_to_km, au_to_ly, au_to_m, b_to_kb, b_to_kib, bar_to_atm, bar_to_kpa, bar_to_mbar, bar_to_pa, bar_to_psi, bit_to_byte, bps_to_gbps, bps_to_kBps2, bps_to_kbps, bps_to_mbps, bq_to_ci, bq_to_kbq, btu_h_to_w, btu_to_cal, btu_to_j, btu_to_kcal, btu_to_kwh, byte_to_bit, cToF2, cToK, cToR, c_to_f, c_to_k, c_to_kmh, c_to_r, cal_to_btu, cal_to_j, carat_to_kg, cc_to_ml, cd_to_lm, century_to_decade, century_to_year, ci_to_bq, cm1_to_m, cm2_to_ft2, cm2_to_in2, cm2_to_m2, cm2_to_mm2, cm3_to_l, cm3_to_ml, cm_to_ft, cm_to_inch, cm_to_km, cm_to_m, cm_to_mm, cm_to_mm2c, coulomb_to_ah, coulomb_to_e, cp_to_p, cp_to_pa_s, cst_to_st, ct_to_g, cup_to_fl_oz, cup_to_ml, cup_to_tbsp, cup_to_tsp, day_to_fortnight, day_to_hour, day_to_min, day_to_month, day_to_sec, day_to_week, day_to_year, db_to_gain, dbm_to_mw, dbm_to_w, decade_to_century, decade_to_year, decimal_to_percent, deg_to_arcmin, deg_to_arcsec, deg_to_gon, deg_to_grad, deg_to_mil, deg_to_mrad, deg_to_rot, deg_to_turn, delta_c_to_delta_f, delta_f_to_delta_c, denier_to_tex, dwt_to_g, dyn_to_n, e_to_coulomb, earth_mass_to_kg, eh_to_j, em_to_px, eu_to_uk, eu_to_us, ev_to_j, ev_to_kev, ev_to_lux, fToC2, fToK, fToR, f_to_c, f_to_k, f_to_r, fathom_to_ft, fathom_to_m, fc_to_lux, fl_oz_to_cup, fl_oz_to_ml, fm_to_am, fm_to_pm, fortnight_to_day, fstop_to_tstop, ft2_to_acre, ft2_to_cm2, ft3_to_gal, ft3_to_l, ft3_to_m3, ft_s2_to_ms2, ft_to_cm, ft_to_fathom, ft_to_in, ft_to_km, ft_to_m, ft_to_m2c, ft_to_mi, ft_to_yd, fts_to_kmh, fts_to_kmh2, fts_to_mach, fts_to_mph, fts_to_ms, g_to_ct, g_to_dwt, g_to_gr, g_to_kg, g_to_lb, g_to_mg, g_to_ms2, g_to_oz, g_to_oz2c, g_to_troy_oz, gain_to_db, gal_to_ft3, gal_to_l, gal_to_m3, gal_to_ml, gal_to_quart, gal_uk_to_l, gauss_to_milligauss, gauss_to_tesla, gb_to_kb, gb_to_mb, gb_to_tb, gbit_to_gbyte, gbps_to_bps, gbps_to_mbps, gbps_to_tbps, gbyte_to_gbit, gcm3_to_kgm3, gev_to_mev, ghz_to_hz, ghz_to_khz, ghz_to_mhz, ghz_to_thz, gib_to_mib, gib_to_tib, gmm_to_lbm, gon_to_deg, gpm_to_lpm, gpm_to_lps, gr_to_g, grad_to_deg, grad_to_rad, gy_to_mgy, gy_to_rad, ha_to_ac, ha_to_acre2, ha_to_m2, ha_to_sqkm, ha_to_sqm, hbar_to_kpa, hour_to_day, hour_to_min, hour_to_sec, hour_to_week, hp_to_kw, hp_to_ps, hp_to_w, hpa_to_mmhg, hz_to_ghz, hz_to_khz, hz_to_mhz, hz_to_rad_s, hz_to_rpm, in2_to_cm2, in3_to_l, in_to_ft, in_to_mm, inch_to_cm, inch_to_m, inch_to_mm, inch_to_pt, inhg_to_pa, j_to_btu, j_to_cal, j_to_eh, j_to_ev, j_to_kj, j_to_kwh, j_to_mj, j_to_therm, j_to_wh, kBps_to_bps2, kToC, kToF, kToR, k_to_c, k_to_f, k_to_r, ka_to_amp, kb_to_b, kb_to_gb, kb_to_mb, kbit_to_kbyte, kbps_to_bps, kbps_to_mbps, kbq_to_bq, kbyte_to_kbit, kcal_to_btu, kcal_to_kj, kcal_to_kwh, kev_to_ev, kg_to_carat, kg_to_earth_mass, kg_to_g, kg_to_lb, kg_to_lb2, kg_to_lb2c, kg_to_mg, kg_to_oz, kg_to_quintal, kg_to_slug, kg_to_solar_mass, kg_to_st, kg_to_stone, kg_to_t, kg_to_tonne, kg_ton_long, kg_ton_short, kgf_to_lbf, kgf_to_n, kgfm_to_lbft, kgfm_to_nm, kgm3_to_gcm3, kgm3_to_lbft3, khz_to_ghz, khz_to_hz, khz_to_mhz, kib_to_b, kj_to_j, kj_to_kcal, km2_to_m2, km2_to_mi2, km_to_au, km_to_cm, km_to_ft, km_to_ly, km_to_m, km_to_mi, km_to_mi2, km_to_nm, km_to_pc, kmh2_to_ms2, kmh_to_c, kmh_to_fts, kmh_to_kn, kmh_to_mach, kmh_to_mph, kmh_to_mph2, kmh_to_ms, kml_to_l100km, kml_to_mpg, kn_to_kmh, kn_to_mph, kn_to_ms, kn_to_n, knots_to_mph, kohm_to_ohm, kpa_to_bar, kpa_to_gauge, kpa_to_inhg2, kpa_to_mbar2, kpa_to_pa, kpa_to_psi, kv_to_v, kw_to_hp, kw_to_ps, kw_to_w, kwh_to_btu, kwh_to_j, kwh_to_kcal, l100km_to_kml, l_per_100km_to_mpg, l_to_cm3, l_to_ft2, l_to_ft3, l_to_gal, l_to_gal_uk, l_to_in3, l_to_m3, l_to_ml, l_to_oz, l_to_pint, l_to_pt2, l_to_qt, l_to_quart, lb_to_g, lb_to_gm, lb_to_kg, lb_to_kg2c, lb_to_oz, lb_to_stone, lb_to_t, lbf_to_kgf, lbf_to_n, lbft3_to_kgm3, lbft_to_kgfm, lbft_to_lbin, lbft_to_nm, lbin_to_lbft, lbin_to_nm, lm_to_cd, lpm_to_gpm, lpm_to_lps, lpm_to_m3h, lps_to_gpm, lps_to_lpm, lps_to_m3h, lux_to_ev, lux_to_fc, ly_to_au, ly_to_km, ly_to_m, ly_to_pc, m2_to_cm2, m2_to_ha, m2_to_km2, m2_to_yd2, m3_to_ft3, m3_to_gal, m3_to_l, m3_to_yd3, m3h_to_lpm, m3h_to_lps, m_to_au, m_to_cm, m_to_cm1, m_to_fathom, m_to_ft, m_to_inch, m_to_km, m_to_ly, m_to_mi, m_to_mm, m_to_pc, m_to_rod, m_to_um, m_to_yd, ma_to_a, mach_to_fts, mach_to_kmh, mach_to_mph, mb_to_gb, mb_to_kb, mb_to_tb, mbar_to_bar, mbar_to_kpa, mbar_to_pa, mbit_to_mbyte, mbps_to_bps, mbps_to_gbps, mbps_to_kbps, mbps_to_tbps, mbyte_to_mbit, mev_to_gev, mg_to_g, mg_to_kg, mgy_to_gy, mhz_to_ghz, mhz_to_hz, mhz_to_khz, mi2_to_km2, mi_to_ft, mi_to_km, mi_to_km2, mi_to_m, mi_to_yd, mib_to_gib, micron_to_mm, mil_to_deg, millennium_to_year, milligauss_to_gauss, min_to_day, min_to_hour, min_to_ms, min_to_sec, min_to_week, mj_to_j, ml_to_cc, ml_to_cm3, ml_to_cup, ml_to_fl_oz, ml_to_floz2, ml_to_l, ml_to_mm3, ml_to_oz2, ml_to_pt, ml_to_tbsp, ml_to_tsp, mm2_to_cm2, mm3_to_ml, mm_to_cm, mm_to_in, mm_to_inch, mm_to_m, mm_to_pt, mmh2o_to_pa, mmhg_to_atm, mmhg_to_hpa, mmhg_to_pa, mmol_to_mol, mol_to_mmol, month_to_day, month_to_week, month_to_year, mpg_to_kml, mpg_to_l_per_100km, mph2_to_ms, mph_to_fts, mph_to_kmh, mph_to_kmh2, mph_to_kn, mph_to_knots, mph_to_mach, mph_to_ms, mrad_to_deg, ms2_to_ft_s2, ms2_to_g, ms2_to_kmh2, ms_to_fts, ms_to_kmh, ms_to_kn, ms_to_min, ms_to_mph, ms_to_sec, msv_to_sv, mw_to_dbm, mw_to_w, n_to_dyn, n_to_kgf, n_to_kn, n_to_lbf, n_to_ton_force, nm_to_angstrom, nm_to_kgfm, nm_to_km, nm_to_lbft, nm_to_lbin, nm_to_um, nmc_to_tex, oersted_to_a_m, ohm_to_kohm, oz_to_g, oz_to_g2c, oz_to_kg, oz_to_lb, oz_to_ml2, oz_to_stick, oz_to_t, ozm_to_g, p_to_cp, p_to_pa_s, pa_s_to_cp, pa_s_to_p, pa_to_atm, pa_to_bar, pa_to_inhg, pa_to_kpa, pa_to_mbar, pa_to_mmh2o, pa_to_mmhg, pa_to_psi, pa_to_spl, pa_to_torr, pb_to_tb, pc_to_km, pc_to_ly, pc_to_m, percent_to_decimal, percent_to_permille, percent_to_ppm, permille_to_percent, pint_to_l, pint_to_quart, pm_to_fm, pound_to_kg2, ppb_to_ppm, ppm_to_percent, ppm_to_ppb, ps_to_hp, ps_to_kw, psi_to_atm, psi_to_bar, psi_to_kpa, psi_to_pa, pt_to_inch, pt_to_l2, pt_to_ml, pt_to_mm, pt_to_px, px_to_em, px_to_pt, qt_to_l, quart_to_gal, quart_to_l, quart_to_pint, quintal_to_kg, rToC, rToF, rToK, r_to_c, r_to_f, r_to_k, rad_s_to_hz, rad_s_to_rpm, rad_to_grad, rad_to_gy, rad_to_rot, rem_to_sv, rod_to_m, rot_to_deg, rot_to_rad, rpm_to_hz, rpm_to_rad_s, sec_to_day, sec_to_hour, sec_to_min, sec_to_ms, sec_to_week, slug_to_kg, solar_mass_to_kg, spl_to_pa, sqcm_to_sqin, sqft_to_ac, sqft_to_acres2, sqft_to_sqin, sqft_to_sqm, sqft_to_sqyd, sqin_to_sqcm, sqin_to_sqft, sqin_to_sqm, sqkm_to_ha, sqkm_to_sqmi, sqm_to_ac, sqm_to_ha, sqm_to_sqft, sqm_to_sqin, sqm_to_sqyd, sqmi_to_ac, sqmi_to_sqkm, sqyd_to_sqft, sqyd_to_sqm, st_to_cst, st_to_kg, stick_to_oz, stick_to_tbsp, stone_to_kg, stone_to_lb, sv_to_msv, sv_to_rem, t_to_kg, t_to_lb, t_to_oz, tb_to_gb, tb_to_mb, tb_to_pb, tbps_to_gbps, tbps_to_mbps, tbsp_to_cup, tbsp_to_ml, tbsp_to_stick, tbsp_to_tsp, tesla_to_gauss, tex_to_denier, tex_to_nmc, therm_to_j, thz_to_ghz, tib_to_gib, ton_force_to_n, ton_long_kg, ton_short_kg, ton_to_tonne, tonne_to_kg, tonne_to_ton, torr_to_atm, torr_to_pa, troy_oz_to_g, tsp_to_cup, tsp_to_ml, tsp_to_tbsp, tstop_to_fstop, turn_to_deg, uk_to_eu, um_to_m, um_to_nm, us_to_eu, v_to_kv, w_to_btu_h, w_to_dbm, w_to_hp, w_to_kw, w_to_mw, week_to_day, week_to_hour, week_to_min, week_to_month, week_to_sec, wh_to_j, yd2_to_m2, yd3_to_m3, yd_to_ft, yd_to_m, yd_to_m2, yd_to_mi, year_to_century, year_to_day, year_to_decade, year_to_millennium, year_to_month
+
+## validator (16)
+
+match_glob, valid_alnum, valid_alpha, valid_date, valid_digit, valid_email, valid_empty, valid_hex, valid_int, valid_ip, valid_len, valid_number, valid_port, valid_range, valid_url, valid_uuid
+
+## vet (18)
+
+bird_age, cat_age, dog_age, heart_rate_cat, heart_rate_dog, heart_rate_horse, horse_age, pet_calories, pet_food, pet_water, pregnancy_cat, pregnancy_cow, pregnancy_dog, pregnancy_horse, pregnancy_pig, pregnancy_rabbit, pregnancy_sheep, rabbit_age
+
+## watch (4)
+
+watch_check, watch_file, watch_list, watch_stop
+
+## websocket (2)
+
+ws_connect, ws_server
+
+## window (27)
+
+win_circle, win_clear, win_close, win_fill_circle, win_fill_rect, win_img, win_key, win_key_down, win_line, win_mouse_btn, win_mouse_x, win_mouse_y, win_open, win_particles, win_particles_step, win_pixel, win_rect, win_reset_transform, win_rotate, win_running, win_scale, win_screenshot, win_sprite, win_text, win_translate, win_update, win_wait_close
+
+## language keywords (11)
+
+call, case, catch, def, elif, export, goto, if, text, textblock, try
