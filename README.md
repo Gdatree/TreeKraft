@@ -12,7 +12,7 @@
 
 ## Скачать
 
-Готовый установщик лежит в [релизах](https://github.com/Gdatree/TreeKraft/releases/latest) (`TreeKraft instaler.exe`, Windows 10/11, x64).
+Готовый установщик лежит в [релизах](https://github.com/Gdatree/TreeKraft/releases/latest) (`TreeKraft installer.exe`, Windows 10/11, x64).
 
 > Windows может показать предупреждение. Нажми **«Подробнее»** → **«Выполнить в любом случае»**. Файл безопасен, код открыт.
 
